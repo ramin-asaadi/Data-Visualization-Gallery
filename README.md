@@ -9,6 +9,7 @@ library(ggpubr)
 library(extrafont)
 
 gapminder::gapminder %>%
+  rename(Year = year) %>%
   filter(year %in% c(1952, 2007),
          continent == "Asia") %>%
   mutate(paired = rep(1:(n()/2),each=2),
