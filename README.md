@@ -6,7 +6,7 @@
 ```{r}
 library(tidyverse)
 library(ggpubr)
-library(extrafont)
+library(extrafont) # extra fonts
 
 gapminder::gapminder %>%
   rename(Year = year) %>%
