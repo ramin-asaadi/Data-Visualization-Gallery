@@ -10,7 +10,7 @@ library(extrafont) # getting extra fonts
 
 gapminder::gapminder %>%
   rename(Year = year) %>%
-  filter(Year %in% c(1952, 2007),
+  filter(Year %in% c(1952, 2007), # years 1952 & 2007
          continent == "Asia") %>%
   mutate(paired = rep(1:(n()/2),each=2),
          Year=factor(Year)) %>%
